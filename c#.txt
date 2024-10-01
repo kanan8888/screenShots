@@ -1,0 +1,57 @@
+using System;
+using System.Threading;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //1
+            int n = int.Parse(Console.ReadLine());
+
+            if (n % 2 == 0)
+            {
+                Console.WriteLine("cutdur");
+            }
+            else
+            {
+                Console.WriteLine("tek");
+            }
+
+            //2
+            int sum = 0;
+            for (int i = 0; i < 100; i++)
+            {
+                if (!(i % 2 == 0))
+                {
+                    sum = sum + i;
+                }
+            }
+            Console.WriteLine(sum);
+
+            //3        2 ni eden bunuda eder
+
+            //4
+            Console.WriteLine("firstNumb pls");
+            int firstNumb = int.Parse(Console.ReadLine());
+            Console.WriteLine("secondNumb pls");
+            int secondNumb = int.Parse(Console.ReadLine());
+
+            int temp = firstNumb;
+            firstNumb = secondNumb;
+            secondNumb = temp;
+            Console.WriteLine("firstNumb=" + firstNumb);
+            Console.WriteLine("secondNumb" + secondNumb);
+
+
+            //task 5
+            int a =int.Parse(Console.ReadLine());
+            int b= int.Parse(Console.ReadLine());
+            Console.WriteLine("s="+a*b); 
+            Console.WriteLine("p="+ 2*(a+b));
+        }
+    }
+}
+
